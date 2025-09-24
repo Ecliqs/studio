@@ -1,3 +1,58 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero",
+      "description": "A calm and serene landscape or abstract background for the hero section.",
+      "imageUrl": "https://images.unsplash.com/photo-1721886561322-854c44c2535a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzZXJlbmUlMjBsYW5kc2NhcGV8ZW58MHx8fHwxNzU4Njg0MTcyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "serene landscape"
+    },
+    {
+      "id": "personalised-treatment",
+      "description": "A person in a calm, therapeutic setting.",
+      "imageUrl": "https://images.unsplash.com/photo-1637245048732-adf1a547835e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx0aGVyYXB5JTIwc2Vzc2lvbnxlbnwwfHx8fDE3NTg2ODU2MTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "therapy session"
+    },
+    {
+      "id": "about-doctor",
+      "description": "Professional and friendly portrait of Dr. Meghna.",
+      "imageUrl": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxwcm9mZXNzaW9uYWwlMjB3b21hbnxlbnwwfHx8fDE3NTg2Nzk5MjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "professional woman"
+    },
+    {
+      "id": "social-1",
+      "description": "Social media post image 1.",
+      "imageUrl": "https://images.unsplash.com/photo-1606607291535-b0adfbf7424f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxpbnNwaXJhdGlvbmFsJTIwcXVvdGV8ZW58MHx8fHwxNzU4NjQzMTg0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "inspirational quote"
+    },
+    {
+      "id": "social-2",
+      "description": "Social media post image 2.",
+      "imageUrl": "https://images.unsplash.com/photo-1590587478871-7ca2dc0f4210?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8d2VsbG5lc3MlMjB0aXB8ZW58MHx8fHwxNzU4NzE1NzY4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "wellness tip"
+    },
+    {
+      "id": "social-3",
+      "description": "Social media post image 3.",
+      "imageUrl": "https://images.unsplash.com/photo-1694274928091-7d533e146597?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjYWxtJTIwbmF0dXJlfGVufDB8fHx8MTc1ODcxNTc2OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "calm nature"
+    },
+    {
+      "id": "social-4",
+      "description": "Social media post image 4.",
+      "imageUrl": "https://images.unsplash.com/photo-1593810451056-0acc1fad48c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtaW5kZnVsbmVzcyUyMGV4ZXJjaXNlfGVufDB8fHx8MTc1ODcxNTc2OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mindfulness exercise"
+    },
+    {
+      "id": "case-study-1",
+      "description": "Image for case study on anxiety.",
+      "imageUrl": "https://images.unsplash.com/photo-1483738264799-0a03c7a9889f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxob3BlZnVsJTIwcGVyc29ufGVufDB8fHx8MTc1ODYzNjQwOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "hopeful person"
+    },
+    {
+      "id": "case-study-2",
+      "description": "Image for case study on relationships.",
+      "imageUrl": "https://images.unsplash.com/photo-1555689070-2d15336749b6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxoYXBweSUyMGNvdXBsZXxlbnwwfHx8fDE3NTg2OTE2ODF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "happy couple"
+    }
+  ]
 }
