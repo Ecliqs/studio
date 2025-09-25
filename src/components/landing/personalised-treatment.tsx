@@ -9,17 +9,17 @@ export function PersonalisedTreatment() {
 
   const approachPoints = [
     {
-      title: 'Balance Your Body',
+      title: 'Body Reset- science backed supplementation plan',
       description:
         'We explore the mind-body connection, using techniques to reduce physiological stress and promote physical well-being as a foundation for mental health.',
     },
     {
-      title: 'Broaden Your Beliefs',
+      title: 'Beliefs Reframing – Inner Child Work, CBT',
       description:
         'Through collaborative therapy, we identify and challenge limiting beliefs, opening up new perspectives and fostering a more resilient, positive mindset.',
     },
     {
-      title: 'Build Your Best Life',
+      title: 'Behaviour Reset–  Lifestyle modifications',
       description:
         'We empower you with practical tools and strategies to build healthy habits, improve relationships, and create a life that feels authentic and fulfilling.',
     },
@@ -49,9 +49,7 @@ export function PersonalisedTreatment() {
               Personalised Treatment with the 3B Approach
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              We don&apos;t believe in one-size-fits-all solutions. Our unique 3B
-              approach—Balance, Broaden, and Build—is tailored to your specific
-              needs, ensuring a holistic and effective path to wellness.
+              Beyond consultations and therapy, we also provide our Reset to Rise program that supports your mental health & life transitions through the 3B Healing Path:
             </p>
             <ul className="mt-8 space-y-6">
               {approachPoints.map((point, index) => (
@@ -61,9 +59,9 @@ export function PersonalisedTreatment() {
                     <h3 className="font-semibold text-lg text-foreground">
                       {point.title}
                     </h3>
-                    <p className="text-muted-foreground mt-1">
+                    {/* <p className="text-muted-foreground mt-1">
                       {point.description}
-                    </p>
+                    </p> */}
                   </div>
                 </li>
               ))}

@@ -1,4 +1,4 @@
-import { Brain, CloudRain, Zap, HeartCrack } from 'lucide-react';
+import { Brain, CloudRain, Zap, HeartCrack, Cloud } from 'lucide-react';
 
 export function StrugglingWith() {
   const struggles = [
@@ -15,14 +15,19 @@ export function StrugglingWith() {
     },
     {
       icon: HeartCrack,
-      title: 'Relationship Issues',
+      title: 'OCD ',
       description:
-        'Struggling with communication, trust, or connection with partners.',
+        'Struggling with Obesessive thoughts and compulsive behaviors.',
     },
     {
       icon: Brain,
-      title: 'Low Self-Esteem',
-      description: 'Battling with self-doubt, criticism, or feelings of inadequacy.',
+      title: 'Psychosis & Bipolar Disorder',
+      description: 'Experiencing changes in perception, thoughts, or beliefs that feel disconnected from reality.',
+    },
+    {
+      icon: Cloud,
+      title: 'Insomnia',
+      description: 'Difficulty falling asleep, staying asleep, or experiencing restful sleep patterns.',
     },
   ];
 
@@ -39,7 +44,7 @@ export function StrugglingWith() {
             towards healing.
           </p>
         </div>
-        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
           {struggles.map((struggle, index) => (
             <div key={index} className="text-center p-6">
               <div className="mx-auto bg-primary/20 p-4 rounded-full w-fit">
