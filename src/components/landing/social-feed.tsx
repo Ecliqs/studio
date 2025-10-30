@@ -1,15 +1,37 @@
-import Image from 'next/image';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { Button } from '../ui/button';
+"use client";
+
+import { useEffect } from "react";
+import { Button } from "../ui/button";
 
 export function SocialFeed() {
-  const socialImages = PlaceHolderImages.filter((img) =>
-    img.id.startsWith('social-')
-  ).slice(0, 4);
+  useEffect(() => {
+    // Load Instagram embed script
+    const script = document.createElement("script");
+    script.src = "//www.instagram.com/embed.js";
+    script.async = true;
+    document.body.appendChild(script);
+
+    // Reprocess embeds when script is ready
+    script.onload = () => {
+      if (window.instgrm) window.instgrm.Embeds.process();
+    };
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
+  const posts = [
+    "https://www.instagram.com/p/C-mnXt5yLj-/",
+    "https://www.instagram.com/p/DADL7d_Jc2i/",
+    "https://www.instagram.com/p/DBTIE6kMNYH/",
+    "https://www.instagram.com/p/DBYKsV8hqLG/",
+  ];
 
   return (
     <section className="py-12 sm:py-16 lg:py-20 bg-secondary">
       <div className="container mx-auto px-4">
+        {/* Header */}
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="font-headline text-3xl md:text-4xl font-semibold text-foreground">
             Connect With Us
@@ -19,26 +41,30 @@ export function SocialFeed() {
             channels.
           </p>
         </div>
-        <div className="mt-12 grid grid-cols-2 lg:grid-cols-4 gap-4">
-          {socialImages.map((image, index) => (
-            <div
-              key={index}
-              className="group relative aspect-square overflow-hidden rounded-lg shadow-lg"
-            >
-              <Image
-                src={image.imageUrl}
-                alt={image.description}
-                data-ai-hint={image.imageHint}
-                fill
-                className="object-cover transition-transform duration-300 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors" />
+
+        {/* Instagram grid */}
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          {posts.map((link, i) => (
+            <div key={i} className="overflow-hidden rounded-xl">
+              <blockquote
+                className="instagram-media w-full !max-w-full !min-w-0"
+                data-instgrm-permalink={link}
+                data-instgrm-version="14"
+              ></blockquote>
             </div>
           ))}
         </div>
+
+        {/* CTA Button */}
         <div className="text-center mt-12">
-          <Button size="lg" variant="outline">
-            Follow on Instagram
+          <Button size="lg" variant="outline" asChild>
+            <a
+              href="https://www.instagram.com/dr.meghna.holisticmindclinic"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Follow on Instagram
+            </a>
           </Button>
         </div>
       </div>

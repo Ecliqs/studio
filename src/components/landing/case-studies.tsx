@@ -20,73 +20,49 @@ export function CaseStudies() {
     (img) => img.id === 'case-study-2'
   );
 
-  const studies = [
-    {
-      title: 'Navigating Anxiety: A Journey to Calm',
-      description:
-        'Discover how a client learned to manage generalized anxiety and panic attacks through a combination of CBT and mindfulness techniques, leading to a more peaceful and controlled life.',
-      tags: ['Anxiety', 'CBT', 'Mindfulness'],
-      image: caseStudy1Image,
-    },
-    {
-      title: 'Rebuilding Connection: A Couple’s Story',
-      description:
-        'Follow the path of a couple as they worked through communication breakdowns and relational trauma to rediscover their bond and build a healthier, more loving partnership.',
-      tags: ['Couples Counseling', 'Relational Trauma'],
-      image: caseStudy2Image,
-    },
+  const posts = [
+    "https://www.instagram.com/reel/C-pYPprNsEO",
+    "https://www.instagram.com/p/C_h2MVSRUzv/", 
+    "https://www.instagram.com/p/C9wZQKkBkhf/",
+    "https://www.instagram.com/p/C9B-gEgPVTn/",
+    
   ];
 
   return (
-    <section id="case-studies" className="py-12 sm:py-16 lg:py-20 bg-background">
+    <section className="py-12 sm:py-16 lg:py-20 bg-background">
       <div className="container mx-auto px-4">
+        {/* Header */}
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="font-headline text-3xl md:text-4xl font-semibold text-foreground">
             Stories of Transformation
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Every individual&apos;s journey is unique. Here are some examples of
-            how we&apos;ve helped clients find their path to wellness.
+            Every individual's journey is unique. Here are some examples of how we've helped clients find their path to wellness.
           </p>
         </div>
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
-          {studies.map((study, index) => (
-            <Card
-              key={index}
-              className="flex flex-col overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
-            >
-              {study.image && (
-                <Image
-                  src={study.image.imageUrl}
-                  alt={study.image.description}
-                  data-ai-hint={study.image.imageHint}
-                  width={600}
-                  height={400}
-                  className="w-full h-48 object-cover"
-                />
-              )}
-              <CardHeader>
-                <CardTitle className="font-headline text-xl">
-                  {study.title}
-                </CardTitle>
-                <div className="flex flex-wrap gap-2 pt-2">
-                  {study.tags.map((tag, tagIndex) => (
-                    <Badge key={tagIndex} variant="secondary">
-                      {tag}
-                    </Badge>
-                  ))}
-                </div>
-              </CardHeader>
-              <CardContent className="flex-grow">
-                <CardDescription>{study.description}</CardDescription>
-              </CardContent>
-              <CardFooter>
-                <Button variant="link" className="px-0">
-                  Read Full Story <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </CardFooter>
-            </Card>
+
+        {/* Instagram grid */}
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          {posts.map((link, i) => (
+            <div key={i} className="overflow-hidden rounded-xl">
+              <blockquote
+                className="instagram-media w-full !max-w-full !min-w-0"
+                data-instgrm-permalink={link}
+                data-instgrm-version="14"
+              ></blockquote>
+            </div>
           ))}
+        </div>
+
+        {/* CTA Button */}
+        <div className="text-center mt-12">
+          <Button size="lg" variant="outline" asChild>
+            <a
+              
+            >
+              Book a Consultation
+            </a>
+          </Button>
         </div>
       </div>
     </section>

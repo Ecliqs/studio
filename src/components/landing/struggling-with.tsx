@@ -35,9 +35,9 @@ export function StrugglingWith() {
     <section className="py-12 sm:py-16 lg:py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto">
-          <h2 className="font-headline text-3xl md:text-4xl font-semibold text-foreground">
-            Are You Struggling With...
-          </h2>
+            <h2 className="font-headline text-3xl md:text-4xl font-semibold text-foreground">
+            Are You Struggling With...?
+            </h2>
           <p className="mt-4 text-lg text-muted-foreground">
             It&apos;s okay not to be okay. Many of us face challenges that can
             feel overwhelming. Recognizing the struggle is the first step

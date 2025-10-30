@@ -22,8 +22,8 @@ export function Pricing() {
   const plans = [
     {
       title: 'Single Session',
-      price: '$150',
-      description: 'A single 50-minute therapy session.',
+      price: '₹1200',
+      description: 'A single 30-minute Consultation.',
       features: [
         'One-on-one with Dr. Meghna',
         'Focused on a specific issue',
@@ -32,30 +32,17 @@ export function Pricing() {
       cta: 'Book a Session',
     },
     {
-      title: 'Wellness Package',
-      price: '$540',
-      description: 'A package of 4 sessions at a discounted rate.',
+      title: 'Therapy Session',
+      price: '₹2000',
+      description: 'A single 1 hour therapy session.',
       features: [
-        '10% savings per session',
         'Consistent therapeutic support',
         'Ideal for ongoing work',
         'Flexible scheduling',
       ],
       cta: 'Choose Package',
       popular: true,
-    },
-    {
-      title: 'Transformation Journey',
-      price: '$960',
-      description: 'A comprehensive 8-session journey.',
-      features: [
-        '20% savings per session',
-        'Deep, transformative work',
-        'Includes email support',
-        'Priority scheduling',
-      ],
-      cta: 'Start Journey',
-    },
+    }
   ];
 
   return (
@@ -70,7 +57,9 @@ export function Pricing() {
             to support your path to mental wellness.
           </p>
         </div>
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-start">
+        <div className="mt-12 flex justify-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start max-w-4xl w-full">
+
           {plans.map((plan) => (
             <Card
               key={plan.title}
@@ -88,7 +77,10 @@ export function Pricing() {
                   {plan.title}
                 </CardTitle>
                 <CardDescription>{plan.description}</CardDescription>
-                <div className="text-4xl font-bold pt-4">{plan.price}</div>
+               <div className="text-4xl font-bold pt-4" style={{ fontFamily: 'sans-serif' }}>
+                  {plan.price}
+                </div>
+
               </CardHeader>
               <CardContent className="flex-grow">
                 <ul className="space-y-3">
@@ -107,6 +99,7 @@ export function Pricing() {
               </CardFooter>
             </Card>
           ))}
+        </div>
         </div>
       </div>
     </section>

@@ -51,11 +51,19 @@ export function Hero() {
           <div className="flex-1 flex justify-center w-full max-w-md">
             <div className="test">
               <div className="aspect-video w-full bg-gray-300 rounded-lg flex items-center justify-center text-gray-600 text-xl font-semibold shadow-lg">
-              Video Placeholder
+<iframe
+  className="rounded-lg h-sm-100 w-sm-100 hero-video w-full h-full"
+  src="https://www.youtube.com/embed/pSMVqQrOPpY?si=9orm0ThCUm_TsE1t"
+  title="YouTube video player"
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  referrerPolicy="strict-origin-when-cross-origin"
+  allowFullScreen
+></iframe>
               
             </div>
             <p className='text-2xl text-center'>
-               Integrative Psychiatrist & Life Transitions Coach.
+               Integrative Psychiatrist & Life Transitions Coach
             </p>
             </div>
               

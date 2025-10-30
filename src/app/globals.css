@@ -86,3 +86,16 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+/* Force Instagram embeds to fit inside grid columns */
+.instagram-media {
+  max-width: 100% !important;
+  min-width: 0 !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+}
+.instagram-media iframe {
+  border-radius: 12px;
+}
+
+

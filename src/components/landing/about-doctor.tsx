@@ -33,22 +33,16 @@ export function AboutDoctor() {
               Meet Dr. Meghna
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              A compassionate and dedicated psychologist with over a decade of
-              experience in helping individuals navigate life&apos;s challenges.
+              As an integrative psychiatrist, I believe in a holistic approach to mental health. I specialise in management of anxiety, depression, OCD, trauma, PTSD, etc.
             </p>
             <p className="mt-4 text-muted-foreground">
-              Dr. Meghna believes in a holistic approach to mental wellness,
-              integrating evidence-based therapies with personalized care plans.
-              Her mission is to create a safe, non-judgmental space where
-              clients can explore their thoughts and feelings, develop coping
-              strategies, and embark on a journey towards a more fulfilling
-              life.
+              My prescription includes-
             </p>
-            <p className="mt-4 text-muted-foreground">
-              She specializes in cognitive-behavioral therapy (CBT), mindfulness
-              practices, and relational psychology, with a special focus on
-              women&apos;s mental health and life transitions.
-            </p>
+            <ul className="mt-4 text-muted-foreground list-disc pl-6">
+              <li>Medications (based on severity of the clinical condition)</li>
+              <li>Evidence-based therapies</li>
+              <li>Personalised diet plan</li>
+            </ul>
             <Button size="lg" className="mt-8">
               Learn More About Dr. Meghna
             </Button>
