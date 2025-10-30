@@ -9,19 +9,28 @@ export function PersonalisedTreatment() {
 
   const approachPoints = [
     {
-      title: 'Body Reset- science backed supplementation plan',
-      description:
-        'We explore the mind-body connection, using techniques to reduce physiological stress and promote physical well-being as a foundation for mental health.',
+      title: 'Understanding Your Symptoms',
+      description: 'Initial evaluation of your current mental health concerns and symptoms.',
     },
     {
-      title: 'Beliefs Reframing – Inner Child Work, CBT',
-      description:
-        'Through collaborative therapy, we identify and challenge limiting beliefs, opening up new perspectives and fostering a more resilient, positive mindset.',
+      title: 'Detailed History Taking',
+      description: 'Comprehensive review of your medical, psychological, and social history.',
     },
     {
-      title: 'Behaviour Reset–  Lifestyle modifications',
-      description:
-        'We empower you with practical tools and strategies to build healthy habits, improve relationships, and create a life that feels authentic and fulfilling.',
+      title: 'Lab Tests',
+      description: 'Essential laboratory testing to understand your biological markers.',
+    },
+    {
+      title: 'Medications',
+      description: 'Prescription based on severity of the clinical condition.',
+    },
+    {
+      title: 'Evidence-based Therapies',
+      description: 'Implementation of CBT and REBT therapeutic approaches.',
+    },
+    {
+      title: 'Personalised Prescription',
+      description: 'Customized treatment plan based on lab reports and lifestyle.',
     },
   ];
 

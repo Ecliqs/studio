@@ -40,7 +40,7 @@ export function Pricing() {
         'Ideal for ongoing work',
         'Flexible scheduling',
       ],
-      cta: 'Choose Package',
+      cta: 'Book a Session',
       popular: true,
     }
   ];

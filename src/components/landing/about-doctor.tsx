@@ -44,7 +44,7 @@ export function AboutDoctor() {
               <li>Personalised diet plan</li>
             </ul>
             <Button size="lg" className="mt-8">
-              Learn More About Dr. Meghna
+              <a href="#appointment">Book an Appointment</a>
             </Button>
           </div>
         </div>

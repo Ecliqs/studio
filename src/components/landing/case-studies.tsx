@@ -56,10 +56,8 @@ export function CaseStudies() {
 
         {/* CTA Button */}
         <div className="text-center mt-12">
-          <Button size="lg" variant="outline" asChild>
-            <a
-              
-            >
+          <Button size="lg" variant="outline" className="bg-primary text-white" asChild>
+            <a href="#appointment">
               Book a Consultation
             </a>
           </Button>

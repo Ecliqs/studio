@@ -5,7 +5,7 @@ export function Statistics() {
       label: 'Patients Treated',
     },
     {
-      value: '10+',
+      value: '20+',
       label: 'Years of Experience',
     },
     {

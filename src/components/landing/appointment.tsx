@@ -22,12 +22,12 @@ import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from '@
 
 const formSchema = z.object({
   first_name: z.string().min(2, { message: 'First name must be at least 2 characters.' }),
-  last_name: z.string().optional(),
+  city: z.string().optional(),
   gender: z.enum(['Male', 'Female', 'Other'], { required_error: 'Gender is required.' }),
   age: z.string().min(1, { message: 'Age is required.' }),
   phone: z.string().min(10, { message: 'Phone number must be at least 10 digits.' }),
   email: z.string().email({ message: 'Please enter a valid email address.' }),
-  address: z.string().min(5, { message: 'Address must be at least 5 characters.' }),
+  problem: z.string().min(5, { message: 'Address must be at least 5 characters.' }),
   occupation: z.string().optional(),
   marital_status: z.enum(['Single', 'Married', 'Divorced', 'Widowed', 'Other'], { required_error: 'Marital status is required.' }),
 });
@@ -40,12 +40,12 @@ export function Appointment() {
     resolver: zodResolver(formSchema),
     defaultValues: {
   first_name: '',
-  last_name: '',
+  city: '',
   gender: 'Male',
   age: '',
   phone: '',
   email: '',
-  address: '',
+  problem: '',
   occupation: '',
   marital_status: 'Single',
 },
@@ -103,164 +103,150 @@ export function Appointment() {
               <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
                   
-                  {/* First Name */}
-                  <FormField
-                    control={form.control}
-                    name="first_name"
-                    render={({ field }) => (
+                    <div className="grid grid-cols-2 gap-4">
+                    {/* First Name */}
+                    <FormField
+                      control={form.control}
+                      name="first_name"
+                      render={({ field }) => (
                       <FormItem>
-                        <FormLabel>First Name</FormLabel>
+                        <FormLabel>Name</FormLabel>
                         <FormControl>
-                          <Input placeholder="John" {...field} />
+                        <Input placeholder="Name" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
-                    )}
-                  />
-
-                  {/* Last Name */}
-                  <FormField
-                    control={form.control}
-                    name="last_name"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Last Name</FormLabel>
-                        <FormControl>
-                          <Input placeholder="Doe" {...field} />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-
-                  {/* Gender */}
-                  <FormField
-                    control={form.control}
-                    name="gender"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Gender</FormLabel>
-                        <Select onValueChange={field.onChange} value={field.value}>
-                          <FormControl>
-                            <SelectTrigger>
-                              <SelectValue placeholder="Select gender" />
-                            </SelectTrigger>
-                          </FormControl>
-                          <SelectContent>
-                            <SelectItem value="Male">Male</SelectItem>
-                            <SelectItem value="Female">Female</SelectItem>
-                            <SelectItem value="Other">Other</SelectItem>
-                          </SelectContent>
-                        </Select>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-
-                  {/* Age */}
-                  <FormField
-                    control={form.control}
-                    name="age"
-                    render={({ field }) => (
+                      )}
+                    />
+                    {/* Age */}
+                    <FormField
+                      control={form.control}
+                      name="age"
+                      render={({ field }) => (
                       <FormItem>
                         <FormLabel>Age</FormLabel>
                         <FormControl>
-                          <Input type="text" placeholder="e.g. 28" {...field} />
+                        <Input type="text" placeholder="e.g. 28" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
-                    )}
-                  />
+                      )}
+                    />
+                    
+                    </div>
 
-                  {/* Phone */}
-                  <FormField
-                    control={form.control}
-                    name="phone"
-                    render={({ field }) => (
+                    
+                   {/* Last Name */}
+                    <FormField
+                      control={form.control}
+                      name="city"
+                      render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>City</FormLabel>
+                        <FormControl>
+                        <Input placeholder="" {...field} />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                      )}
+                    />
+
+                    
+                 
+
+                    <div className="grid grid-cols-2 gap-4">
+                    {/* Phone */}
+                    <FormField
+                      control={form.control}
+                      name="phone"
+                      render={({ field }) => (
                       <FormItem>
                         <FormLabel>Phone Number</FormLabel>
                         <FormControl>
-                          <Input type="tel" placeholder="9876543210" {...field} />
+                        <Input type="tel" placeholder="9876543210" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
-                    )}
-                  />
+                      )}
+                    />
 
-                  {/* Email */}
-                  <FormField
-                    control={form.control}
-                    name="email"
-                    render={({ field }) => (
+                    {/* Email */}
+                    <FormField
+                      control={form.control}
+                      name="email"
+                      render={({ field }) => (
                       <FormItem>
                         <FormLabel>Email Address</FormLabel>
                         <FormControl>
-                          <Input type="email" placeholder="you@example.com" {...field} />
+                        <Input type="email" placeholder="you@example.com" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
-                    )}
-                  />
+                      )}
+                    />
+                    </div>
 
                   {/* Address */}
                   <FormField
                     control={form.control}
-                    name="address"
+                    name="problem"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Address</FormLabel>
+                        <FormLabel>Problem</FormLabel>
                         <FormControl>
-                          <Textarea placeholder="Enter full address" {...field} />
+                          <Textarea placeholder="Describe your problems" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
                     )}
                   />
 
-                  {/* Occupation */}
-                  <FormField
-                    control={form.control}
-                    name="occupation"
-                    render={({ field }) => (
+                    <div className="grid grid-cols-2 gap-4">
+                    {/* Occupation */}
+                    <FormField
+                      control={form.control}
+                      name="occupation"
+                      render={({ field }) => (
                       <FormItem>
                         <FormLabel>Occupation</FormLabel>
                         <FormControl>
-                          <Input placeholder="Software Engineer, Student, etc." {...field} />
+                        <Input placeholder="Occupation" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
-                    )}
-                  />
+                      )}
+                    />
 
-                  {/* Marital Status */}
-                  <FormField
-                    control={form.control}
-                    name="marital_status"
-                    render={({ field }) => (
+                    {/* Marital Status */}
+                    <FormField
+                      control={form.control}
+                      name="marital_status" 
+                      render={({ field }) => (
                       <FormItem>
                         <FormLabel>Marital Status</FormLabel>
                         <Select onValueChange={field.onChange} value={field.value}>
-                          <FormControl>
-                            <SelectTrigger>
-                              <SelectValue placeholder="Select status" />
-                            </SelectTrigger>
-                          </FormControl>
-                          <SelectContent>
-                            <SelectItem value="Single">Single</SelectItem>
-                            <SelectItem value="Married">Married</SelectItem>
-                            <SelectItem value="Divorced">Divorced</SelectItem>
-                            <SelectItem value="Widowed">Widowed</SelectItem>
-                            <SelectItem value="Other">Other</SelectItem>
-                          </SelectContent>
+                        <FormControl>
+                          <SelectTrigger>
+                          <SelectValue placeholder="Select status" />
+                          </SelectTrigger>
+                        </FormControl>
+                        <SelectContent>
+                          <SelectItem value="Single">Single</SelectItem>
+                          <SelectItem value="Married">Married</SelectItem>
+                          <SelectItem value="Divorced">Divorced</SelectItem>
+                          <SelectItem value="Widowed">Widowed</SelectItem>
+                          <SelectItem value="Other">Other</SelectItem>
+                        </SelectContent>
                         </Select>
                         <FormMessage />
                       </FormItem>
-                    )}
-                  />
+                      )}
+                    />
+                    </div>
 
                   <div className="text-center">
                     <Button type="submit" size="lg" disabled={loading}>
-                      {loading ? 'Submitting...' : 'Save Patient Record'}
+                      {loading ? 'Submitting...' : 'Submit'}
                     </Button>
                   </div>
                 </form>
