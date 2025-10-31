@@ -56,7 +56,7 @@ export function Footer() {
           </div>
           <div>
             <h3 className="font-headline text-lg font-semibold">Connect</h3>
-            <div className="flex gap-4 mt-4">
+            {/* <div className="flex gap-4 mt-4">
               {socialLinks.map((link) => (
                 <Button key={link.name} variant="ghost" size="icon" asChild>
                   <a href={link.href} aria-label={link.name}>
@@ -64,10 +64,10 @@ export function Footer() {
                   </a>
                 </Button>
               ))}
-            </div>
+            </div> */}
             <div className="mt-4 space-y-1 text-sm text-muted-foreground">
-              <p>info@holisticmind.com</p>
-              <p>(123) 456-7890</p>
+              <p>info@holisticmindclinic.com</p>
+              <p>+91 93924 49896</p>
             </div>
           </div>
         </div>
