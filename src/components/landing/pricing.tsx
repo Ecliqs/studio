@@ -21,28 +21,32 @@ export function Pricing() {
   // --- OPTION 1: DETAILED PRICING ---
   const plans = [
     {
-      title: 'Single Session',
-      price: '₹1200',
+      title: 'Lab to Life consultation',
+      price: '₹1500',
       description: 'A single 30-minute Consultation.',
       features: [
-        'One-on-one with Dr. Meghna',
-        'Focused on a specific issue',
-        'Pay as you go',
+        'Intake form with your symptoms, history',
+        'Report mapping (mapping your lab reports to your symptoms)',
+        'Prescription of medicines if required',
+        'Prescription of natural supplements',
       ],
       cta: 'Book a Session',
     },
     {
-      title: 'Therapy Session',
-      price: '₹2000',
-      description: 'A single 1 hour therapy session.',
+      title: 'ACT/ CBT/ REBT/ Inner Child Therapy',
+      price: '₹2500',
+      description: 'A single 50-minute Consultation.',
       features: [
-        'Consistent therapeutic support',
-        'Ideal for ongoing work',
-        'Flexible scheduling',
+        'Report mapping (lab reports to symptoms)',
+        'Prescription of medicines of required',
+        'Prescription of natural supplements',
+        'Personalised care plan',
+        'Quick anxiety relief techniques and resources',
+        'Focused on a specific issue',
       ],
       cta: 'Book a Session',
       popular: true,
-    }
+    },
   ];
 
   return (
@@ -92,10 +96,12 @@ export function Pricing() {
                   ))}
                 </ul>
               </CardContent>
-              <CardFooter>
+              <CardFooter className="flex justify-center">
+                <a href="#appointment" className="w-full">
                 <Button className="w-full" size="lg">
-                  {plan.cta}
-                </Button>
+                    {plan.cta}
+                  </Button>
+                </a>
               </CardFooter>
             </Card>
           ))}

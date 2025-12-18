@@ -14,6 +14,7 @@ import { Appointment } from '@/components/landing/appointment';
 import { Faq } from '@/components/landing/faq';
 import { Footer } from '@/components/landing/footer';
 import { ScrollAnimation } from '@/components/ui/scroll-animation';
+import { Programs } from '@/components/landing/program';
 
 export default function Home() {
   return (
@@ -49,6 +50,9 @@ export default function Home() {
         </ScrollAnimation>
         <ScrollAnimation>
           <CaseStudies />
+        </ScrollAnimation>
+        <ScrollAnimation>
+          <Programs />
         </ScrollAnimation>
         <ScrollAnimation>
           <Pricing />

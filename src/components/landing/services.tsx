@@ -39,12 +39,12 @@ export function Services() {
       description:
         'Specialized support for the unique mental health challenges women face, from postpartum issues to hormonal changes and societal pressures.',
     },
-    {
-      icon: Users,
-      title: 'Marriage & Couple Counseling',
-      description:
-        'Strengthen your partnership by improving communication, resolving conflicts, and deepening your emotional bond in a safe, neutral space.',
-    },
+    // {
+    //   icon: Users,
+    //   title: 'Marriage & Couple Counseling',
+    //   description:
+    //     'Strengthen your partnership by improving communication, resolving conflicts, and deepening your emotional bond in a safe, neutral space.',
+    // },
     {
       icon: Stethoscope,
       title: 'Health & Wellness',

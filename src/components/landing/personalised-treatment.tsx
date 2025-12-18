@@ -9,27 +9,27 @@ export function PersonalisedTreatment() {
 
   const approachPoints = [
     {
-      title: 'Understanding Your Symptoms',
+      title: 'LAB TESTS ',
       description: 'Initial evaluation of your current mental health concerns and symptoms.',
     },
     {
-      title: 'Detailed History Taking',
+      title: 'DETAILED HISTORY TAKING',
       description: 'Comprehensive review of your medical, psychological, and social history.',
     },
     {
-      title: 'Lab Tests',
+      title: 'UNDERSTANDING YOUR SYMPTOMS',
       description: 'Essential laboratory testing to understand your biological markers.',
     },
     {
-      title: 'Medications',
+      title: 'EVIDENCE BASED THERAPIES',
       description: 'Prescription based on severity of the clinical condition.',
     },
     {
-      title: 'Evidence-based Therapies',
+      title: 'PERSONALISED PRESCRIPTIONS',
       description: 'Implementation of CBT and REBT therapeutic approaches.',
     },
     {
-      title: 'Personalised Prescription',
+      title: 'MEDICATIONS ',
       description: 'Customized treatment plan based on lab reports and lifestyle.',
     },
   ];
@@ -55,11 +55,9 @@ export function PersonalisedTreatment() {
           <div>
             <span className="text-primary font-semibold">Our Unique Method</span>
             <h2 className="mt-2 font-headline text-3xl md:text-4xl font-semibold text-foreground">
-              Personalised Treatment with the 3B Approach
-            </h2>
+Personalised Treatment with the Lab to Life Healing Approach.            </h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              Beyond consultations and therapy, we also provide our Reset to Rise program that supports your mental health & life transitions through the 3B Healing Path:
-            </p>
+Beyond consultations and therapy, our Lab to Life Healing Approach supports your mental health and transforms you at 3B Levels— Biology, Beliefs and Behaviour.            </p>
             <ul className="mt-8 space-y-6">
               {approachPoints.map((point, index) => (
                 <li key={index} className="flex gap-4">

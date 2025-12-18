@@ -27,14 +27,13 @@ export function Hero() {
           {/* Text Content */}
           <div className="flex-1 text-center md:text-left">
             <p className='text-2xl'>
-              Healing you inside out — with the help of science backed Reset to Rise therapy
+              Healing you inside out with-
             </p>
             <h1 className="font-headline text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight">
-              Dr. Meghna Varma<br />
+              Dr. Meghna Krishna<br />
             </h1>
             <p className="mt-6 max-w-2xl mx-auto md:mx-0 text-lg md:text-xl text-primary-foreground/80">
-              Thank you for taking the first step towards your journey of healing and growth. We strive to understand your unique story; your concerns, health history, and lifestyle— so we can create a personalized care plan together!
-            </p>
+Thank you for taking your first step towards empowering the hero and healer within you. We strive to understand your unique story, your concerns, health history and lifestyle so we can create a personalized care plan together!            </p>
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
               <Button size="lg" asChild>
                 <a href="#appointment">
@@ -53,7 +52,7 @@ export function Hero() {
               <div className="aspect-video w-full bg-gray-300 rounded-lg flex items-center justify-center text-gray-600 text-xl font-semibold shadow-lg">
 <iframe
   className="rounded-lg h-sm-100 w-sm-100 hero-video w-full h-full"
-  src="https://www.youtube.com/embed/pSMVqQrOPpY?si=9orm0ThCUm_TsE1t"
+  src="https://www.youtube.com/embed/_u0fgtUr678?si=MpM2VAnw-fZdFe1T"
   title="YouTube video player"
   frameBorder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -63,7 +62,7 @@ export function Hero() {
               
             </div>
             <p className='text-2xl text-center'>
-               Integrative Psychiatrist & Life Transitions Coach
+               Metabolic Psychiatrist and Therapist
             </p>
             </div>
               

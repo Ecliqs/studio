@@ -33,15 +33,15 @@ export function AboutDoctor() {
               Meet Dr. Meghna
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              As an integrative psychiatrist, I believe in a holistic approach to mental health. I specialise in management of anxiety, depression, OCD, trauma, PTSD, etc.
+              As a metabolic psychiatrist, I believe in a Lab to Life approach to mental health. I specialise in management of Anxiety, Depression, OCD, Trauma, PTSD, etc.
             </p>
             <p className="mt-4 text-muted-foreground">
               My prescription includes-
             </p>
             <ul className="mt-4 text-muted-foreground list-disc pl-6">
-              <li>Medications (based on severity of the clinical condition)</li>
-              <li>Evidence-based therapies</li>
-              <li>Personalised diet plan</li>
+              <li>Medications (Based on severity of the clinical condition)</li>
+              <li>Evidence- based therapies </li>
+              <li>Personalised care plan.</li>
             </ul>
             <Button size="lg" className="mt-8">
               <a href="#appointment">Book an Appointment</a>
