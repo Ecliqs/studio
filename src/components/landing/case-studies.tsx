@@ -21,10 +21,10 @@ export function CaseStudies() {
   );
 
   const posts = [
-    "https://www.instagram.com/reel/C-pYPprNsEO",
-    "https://www.instagram.com/p/C_h2MVSRUzv/", 
-    "https://www.instagram.com/p/C9wZQKkBkhf/",
-    "https://www.instagram.com/p/C9B-gEgPVTn/",
+    "https://www.instagram.com/reel/DTh0of6AmUN/?igsh=MWdwa2gwMTJidHI0Nw==",
+    "https://www.instagram.com/reel/DO5zrfTCZoR/?igsh=MXJmanhuOXYxMXd5NQ==", 
+    "https://www.instagram.com/p/DReWJtcAvKM",
+    "https://www.instagram.com/p/DReWEnmgkqv",
     
   ];
 

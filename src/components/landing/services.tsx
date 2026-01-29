@@ -17,10 +17,10 @@ export function Services() {
   const services = [
     {
       icon: Leaf,
-      title: 'Individual Therapy',
+      title: 'Inner Child Therapy',
       description:
-        'A personalized journey towards self-discovery and growth. We address issues like anxiety, depression, and stress in a supportive one-on-one setting.',
-    },
+      'Regression therapy that helps you to deal with difficult emotions like guilt, shame, anxiety and anger to bring calm, clarity and confidence.',   
+ },
     {
       icon: BetweenHorizonalEnd,
       title: 'Life Transition Coaching',
@@ -39,12 +39,12 @@ export function Services() {
       description:
         'Specialized support for the unique mental health challenges women face, from postpartum issues to hormonal changes and societal pressures.',
     },
-    // {
-    //   icon: Users,
-    //   title: 'Marriage & Couple Counseling',
-    //   description:
-    //     'Strengthen your partnership by improving communication, resolving conflicts, and deepening your emotional bond in a safe, neutral space.',
-    // },
+    {
+      icon: Users,
+      title: 'Lab to Life Consultation',
+      description:
+        'A personalised treatment plan based on your lab reports and functional medicine approach.',
+    },
     {
       icon: Stethoscope,
       title: 'Health & Wellness',

@@ -9,9 +9,9 @@ export function StrugglingWith() {
     },
     {
       icon: CloudRain,
-      title: 'Depression & Low Mood',
+      title: 'Depression & Burn Out',
       description:
-        'Losing interest in activities, feeling hopeless, or lacking energy.',
+        'Losing interest in activities, feeling hopeless, or lacking energy. May be mark with high functioning at work.',
     },
     {
       icon: HeartCrack,
@@ -26,7 +26,7 @@ export function StrugglingWith() {
     },
     {
       icon: Cloud,
-      title: 'Insomnia',
+      title: 'Insomnia & Sleep Disorders',
       description: 'Difficulty falling asleep, staying asleep, or experiencing restful sleep patterns.',
     },
   ];
@@ -36,12 +36,12 @@ export function StrugglingWith() {
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto">
             <h2 className="font-headline text-3xl md:text-4xl font-semibold text-foreground">
-            Are You Struggling With...?
+            It&apos;s okay not to be okay
             </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            It&apos;s okay not to be okay. Many of us face challenges that can
+            Many of us face challenges that can
             feel overwhelming. Recognizing the struggle is the first step
-            towards healing.
+            towards healing. Are You Struggling With...?
           </p>
         </div>
         <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">

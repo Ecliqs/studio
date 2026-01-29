@@ -21,28 +21,20 @@ export function Pricing() {
   // --- OPTION 1: DETAILED PRICING ---
   const plans = [
     {
-      title: 'Lab to Life consultation',
-      price: '₹1500',
-      description: 'A single 30-minute Consultation.',
+      title: 'Lab to Life Session',
+      price: '₹1999',
+      description: 'A single 50-minute Consultation.',
       features: [
-        'Intake form with your symptoms, history',
-        'Report mapping (mapping your lab reports to your symptoms)',
-        'Prescription of medicines if required',
-        'Prescription of natural supplements',
+        'A functional medicine approach based on Lab reports and Lifestyle modifications.',
       ],
       cta: 'Book a Session',
     },
     {
       title: 'ACT/ CBT/ REBT/ Inner Child Therapy',
-      price: '₹2500',
+      price: '₹1900',
       description: 'A single 50-minute Consultation.',
       features: [
-        'Report mapping (lab reports to symptoms)',
-        'Prescription of medicines of required',
-        'Prescription of natural supplements',
-        'Personalised care plan',
-        'Quick anxiety relief techniques and resources',
-        'Focused on a specific issue',
+        'Regression therapy that helps you deal with difficult emotions like shame, guilt, anxiety and anger to bring calm, clarity and confidence.',
       ],
       cta: 'Book a Session',
       popular: true,

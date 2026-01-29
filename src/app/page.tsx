@@ -52,10 +52,10 @@ export default function Home() {
           <CaseStudies />
         </ScrollAnimation>
         <ScrollAnimation>
-          <Programs />
+          <Pricing />
         </ScrollAnimation>
         <ScrollAnimation>
-          <Pricing />
+          <Programs />
         </ScrollAnimation>
         <ScrollAnimation>
           <Appointment />

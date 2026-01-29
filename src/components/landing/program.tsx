@@ -12,15 +12,16 @@ import { Check } from 'lucide-react';
 export function Programs() {
   const programs = [
     {
-      title: 'Reclaim Therapy Package',
-      price: '₹9,999',
-      duration: 'Valid for 3 Months',
+      title: 'Mindsutra Reclaim Package',
+      price: '₹5,499',
+      duration: 'Valid for 1 Months',
       description: 'A structured therapy program to help you regain emotional balance and mental clarity.',
       features: [
-        '5 Therapy Sessions',
-        'Personalised care approach',
-        'Progress tracking & guidance',
-        '1 Supplement FREE for 1 Week',
+        '1 lab to life healing session',
+        '1 inner child therapy session',
+        '3 nutrition support plans',
+        '1 month of WA support',
+        'Helps you re-energize physically and emotionally',
       ],
       cta: 'Enroll Now',
       popular: true,
@@ -31,26 +32,15 @@ export function Programs() {
       duration: '3 Months',
       description: 'A holistic supplement plan designed to reset your body and mind.',
       features: [
-        '5 Carefully curated supplements',
-        'Supports mental & physical well-being',
-        '3-month structured usage plan',
-        'Expert-recommended formulations',
+        'Monthly 2 therapy sessions (2×3= total 6 sessions)',
+        'Monthly 3 nutrition support plans (3×3=9)',
+        '3 Months of WhatsApp Support',
+        'Helps you reset your biology, belief and behaviour.', 
+        'Improved gut health and weight loss of up to 10 kgs in 3 months. Resources for emotional regulation.',
       ],
       cta: 'Get Started',
     },
-    {
-      title: 'Reset + Reclaim (Combo)',
-      price: '₹21,000',
-      duration: '3 Months',
-      description: 'The complete healing journey combining therapy and supplements for lasting results.',
-      features: [
-        '5 Therapy Sessions',
-        'Complete supplement package',
-        'Integrated mind–body approach',
-        'Maximum value & long-term benefits',
-      ],
-      cta: 'Choose Combo',
-    },
+    
   ];
 
   return (
@@ -65,7 +55,9 @@ export function Programs() {
           </p>
         </div>
 
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-start">
+
+        <div className="mt-12 flex justify-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start max-w-4xl w-full">
           {programs.map((program) => (
             <Card
               key={program.title}
@@ -113,6 +105,7 @@ export function Programs() {
               </CardFooter>
             </Card>
           ))}
+        </div>
         </div>
       </div>
     </section>

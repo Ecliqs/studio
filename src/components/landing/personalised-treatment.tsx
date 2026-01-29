@@ -21,7 +21,7 @@ export function PersonalisedTreatment() {
       description: 'Essential laboratory testing to understand your biological markers.',
     },
     {
-      title: 'EVIDENCE BASED THERAPIES',
+      title: 'INNER CHILD THERAPY & CBT',
       description: 'Prescription based on severity of the clinical condition.',
     },
     {
@@ -29,7 +29,7 @@ export function PersonalisedTreatment() {
       description: 'Implementation of CBT and REBT therapeutic approaches.',
     },
     {
-      title: 'MEDICATIONS ',
+      title: 'MEDICATIONS & NATURAL SUPPLEMENTS',
       description: 'Customized treatment plan based on lab reports and lifestyle.',
     },
   ];

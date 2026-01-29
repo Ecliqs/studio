@@ -30,10 +30,12 @@ export function Hero() {
               Healing you inside out with-
             </p>
             <h1 className="font-headline text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight">
-              Dr. Meghna Krishna<br />
+              Dr. Meghna<br />
             </h1>
             <p className="mt-6 max-w-2xl mx-auto md:mx-0 text-lg md:text-xl text-primary-foreground/80">
-Thank you for taking your first step towards empowering the hero and healer within you. We strive to understand your unique story, your concerns, health history and lifestyle so we can create a personalized care plan together!            </p>
+            Ready to reclaim your energy and reset your life? <br />
+            Take your first step towards calm, clarity and confidence with our Lab to Life program.
+ </p>
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
               <Button size="lg" asChild>
                 <a href="#appointment">
@@ -62,7 +64,7 @@ Thank you for taking your first step towards empowering the hero and healer with
               
             </div>
             <p className='text-2xl text-center'>
-               Metabolic Psychiatrist and Therapist
+               Integrative Psychiatrist and Therapist
             </p>
             </div>
               
