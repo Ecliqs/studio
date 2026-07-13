@@ -6,7 +6,7 @@ export function Statistics() {
     },
     {
       value: '20+',
-      label: 'Years of Experience',
+      label: 'Years of Experience in Medicine',
     },
     {
       value: '95%',

@@ -10,98 +10,171 @@ import { Button } from '@/components/ui/button';
 import { Check } from 'lucide-react';
 
 export function Pricing() {
-  /*
-  This component contains two pricing display options as requested.
-  - Option 1 (active by default) displays concrete pricing plans.
-  - Option 2 (commented out below) shows packages and prompts users to contact for pricing.
-
-  To switch between them, simply comment out Option 1 and uncomment Option 2.
-  */
-
-  // --- OPTION 1: DETAILED PRICING ---
   const plans = [
     {
-      title: 'Lab to Life Session',
-      price: '₹1999',
-      description: 'A single 50-minute Consultation.',
-      features: [
-        'A functional medicine approach based on Lab reports and Lifestyle modifications.',
+      title: 'FUNCTIONAL PSYCHIATRY CONSULTATION',
+      whoIsItFor:
+        'Anyone seeking professional psychiatric evaluation, medication assessment, or looking for symptomatic relief from anxiety, depression, or other mental health concerns.',
+      benefits: [
+        'Get a proper psychiatric evaluation',
+        'Receive medication if required',
+        'Find symptomatic relief with personalized care',
       ],
+      deliverables: [
+        '30-minute one-on-one consultation',
+        'Personalized prescription if needed',
+        'Clear treatment roadmap',
+      ],
+      price: '₹1,500',
+      pricingNote: 'Starts at • Per session',
       cta: 'Book a Session',
     },
     {
-      title: 'ACT/ CBT/ REBT/ Inner Child Therapy',
-      price: '₹1900',
-      description: 'A single 50-minute Consultation.',
-      features: [
-        'Regression therapy that helps you deal with difficult emotions like shame, guilt, anxiety and anger to bring calm, clarity and confidence.',
+      title: 'SOLUTION FOCUSED THERAPY SESSION',
+      whoIsItFor:
+        'Those ready to understand their problematic patterns, set meaningful emotional & behavioral goals, and improve their overall functioning.',
+      benefits: [
+        'Understand your problematic patterns deeply',
+        'Set emotional & behavioral goals',
+        'Improve overall functioning & wellbeing',
       ],
+      deliverables: [
+        '60-minute therapy (CBT / REBT / ACT) session',
+        'Personalized insights & understanding',
+        'Actionable goal-setting framework',
+      ],
+      price: '₹2,500',
+      pricingNote: 'Starts at • Per session',
       cta: 'Book a Session',
       popular: true,
     },
   ];
 
   return (
-    <section id="pricing" className="py-12 sm:py-16 lg:py-20 bg-background">
+    <section
+      id="pricing"
+      className="py-12 sm:py-16 lg:py-20 bg-background"
+    >
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto">
-          <h2 className="font-headline text-3xl md:text-4xl font-semibold text-foreground">
+          <h2 className="font-headline text-3xl md:text-4xl font-semibold">
             Invest in Your Well-being
           </h2>
+
           <p className="mt-4 text-lg text-muted-foreground">
-            Choose a plan that fits your journey. We offer transparent pricing
-            to support your path to mental wellness.
+            Choose the consultation that best fits your needs.
           </p>
         </div>
+
         <div className="mt-12 flex justify-center">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start max-w-4xl w-full">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl w-full">
 
-          {plans.map((plan) => (
-            <Card
-              key={plan.title}
-              className={`flex flex-col h-full shadow-lg hover:shadow-xl transition-shadow duration-300 ${
-                plan.popular ? 'border-primary border-2' : ''
-              }`}
-            >
-              {plan.popular && (
-                <div className="bg-primary text-primary-foreground text-center py-1 font-semibold text-sm">
-                  Most Popular
-                </div>
-              )}
-              <CardHeader>
-                <CardTitle className="font-headline text-2xl">
-                  {plan.title}
-                </CardTitle>
-                <CardDescription>{plan.description}</CardDescription>
-               <div className="text-4xl font-bold pt-4" style={{ fontFamily: 'sans-serif' }}>
-                  {plan.price}
-                </div>
+            {plans.map((plan) => (
+              <Card
+                key={plan.title}
+                className={`flex flex-col h-full shadow-lg transition-all hover:shadow-xl ${
+                  plan.popular ? 'border-primary border-2' : ''
+                }`}
+              >
+                {plan.popular && (
+                  <div className="bg-primary text-primary-foreground text-center py-2 text-sm font-semibold">
+                    Most Popular
+                  </div>
+                )}
 
-              </CardHeader>
-              <CardContent className="flex-grow">
-                <ul className="space-y-3">
-                  {plan.features.map((feature, index) => (
-                    <li key={index} className="flex items-center gap-2">
-                      <Check className="h-5 w-5 text-green-500" />
-                      <span className="text-muted-foreground">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-              </CardContent>
-              <CardFooter className="flex justify-center">
-                <a href="#appointment" className="w-full">
-                <Button className="w-full" size="lg">
-                    {plan.cta}
-                  </Button>
-                </a>
-              </CardFooter>
-            </Card>
-          ))}
-        </div>
+                <CardHeader>
+                  <CardTitle className="text-2xl leading-snug">
+                    {plan.title}
+                  </CardTitle>
+                </CardHeader>
+
+                <CardContent className="flex-1 space-y-6">
+                  {/* Who is it for */}
+                  <div>
+                    <h3 className="font-semibold text-lg mb-2">
+                      Who is it for
+                    </h3>
+
+                    <CardDescription className="leading-relaxed">
+                      {plan.whoIsItFor}
+                    </CardDescription>
+                  </div>
+
+                  {/* Benefits */}
+                  <div>
+                    <h3 className="font-semibold text-lg mb-3">
+                      Benefits for you
+                    </h3>
+
+                    <ul className="space-y-2">
+                      {plan.benefits.map((benefit, index) => (
+                        <li
+                          key={index}
+                          className="flex items-start gap-2"
+                        >
+                          <Check className="h-5 w-5 mt-0.5 text-green-500 flex-shrink-0" />
+
+                          <span className="text-muted-foreground">
+                            {benefit}
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  {/* Deliverables */}
+                  <div>
+                    <h3 className="font-semibold text-lg mb-3">
+                      Key Deliverables
+                    </h3>
+
+                    <ul className="space-y-2">
+                      {plan.deliverables.map((item, index) => (
+                        <li
+                          key={index}
+                          className="flex items-start gap-2"
+                        >
+                          <Check className="h-5 w-5 mt-0.5 text-primary flex-shrink-0" />
+
+                          <span className="text-muted-foreground">
+                            {item}
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  {/* Price */}
+                  <div className="pt-2 border-t">
+                    <div
+                      className="text-4xl font-bold"
+                      style={{ fontFamily: 'sans-serif' }}
+                    >
+                      {plan.price}
+                    </div>
+
+                    <p className="text-sm text-muted-foreground mt-1">
+                      {plan.pricingNote}
+                    </p>
+                  </div>
+                </CardContent>
+
+                <CardFooter>
+                  <a href="#appointment" className="w-full">
+                    <Button size="lg" className="w-full">
+                      {plan.cta}
+                    </Button>
+                  </a>
+                </CardFooter>
+              </Card>
+            ))}
+
+          </div>
         </div>
       </div>
     </section>
   );
+
 
   /*
   // --- OPTION 2: CONTACT FOR PRICING ---

@@ -21,10 +21,10 @@ export function CaseStudies() {
   );
 
   const posts = [
-    "https://www.instagram.com/reel/DTh0of6AmUN/?igsh=MWdwa2gwMTJidHI0Nw==",
-    "https://www.instagram.com/reel/DO5zrfTCZoR/?igsh=MXJmanhuOXYxMXd5NQ==", 
-    "https://www.instagram.com/p/DReWJtcAvKM",
-    "https://www.instagram.com/p/DReWEnmgkqv",
+    "https://www.instagram.com/p/DReWJtcAvKM/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==",
+    "https://www.instagram.com/p/DReWEnmgkqv/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==", 
+    // "https://www.instagram.com/p/DReWJtcAvKM",
+    // "https://www.instagram.com/p/DReWEnmgkqv",
     
   ];
 
@@ -42,9 +42,9 @@ export function CaseStudies() {
         </div>
 
         {/* Instagram grid */}
-        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="mt-12 md:flex justify-center align-items-center sm:grid-cols-2 gap-4">
           {posts.map((link, i) => (
-            <div key={i} className="overflow-hidden rounded-xl">
+            <div key={i} className="overflow-hidden rounded-xl mt-3">
               <blockquote
                 className="instagram-media w-full !max-w-full !min-w-0"
                 data-instgrm-permalink={link}

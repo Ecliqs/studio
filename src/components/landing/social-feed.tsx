@@ -22,10 +22,10 @@ export function SocialFeed() {
   }, []);
 
   const posts = [
-    "https://www.instagram.com/p/C-mnXt5yLj-/",
-    "https://www.instagram.com/p/DADL7d_Jc2i/",
-    "https://www.instagram.com/p/DBTIE6kMNYH/",
-    "https://www.instagram.com/p/DBYKsV8hqLG/",
+    "https://www.instagram.com/reel/DZZY7kniMJM/",
+    "https://www.instagram.com/reel/DYt2quDCxFD/",
+    "https://www.instagram.com/reel/DXjcIAmAs30/",
+    "https://www.instagram.com/reel/DZe1ULniBZj/",
   ];
 
   return (

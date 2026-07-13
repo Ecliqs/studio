@@ -22,12 +22,8 @@ Typically, most clients begin to notice changes and improvements within 1 to 3 m
 Our goal is never to rush your process, but to walk beside you — gently, at a pace that feels right for you.`,
     },
     {
-      question: 'What is the “Let’s Be Reelistic” workshop about?',
-      answer: `The Let’s Be Reelistic workshop is all about creating a safe, open, and non-judgmental space where we come together to reflect, share, and grow.
-It’s not just an event — it’s an experience built around community and connection.
-
-Through the medium of fiction, we explore real-life themes that often go unspoken. Stories become the cue for honest conversations — about healing, resilience, and the beautifully messy parts of being human.
-The workshop is designed to help you connect with yourself and others, find shared understanding, and gather resources that support your own healing journey.`,
+      question: 'What is The Reflect & Rise Journal?',
+      answer: `Mindsutra's Reflect & Rise Journal, is intentionally designed to balance psychological depth with usability, making it accessible without diluting its effectiveness. This journal is built around giving you direction without eliminating distractions. It helps ground you at the end of the day; to slowly understand patterns in your thoughts, emotions, and behaviors.`,
     },
     {
       question: 'How do the supplements (Vitamin A, D, B12, Magnesium) help with mental health / well-being?',
@@ -59,18 +55,8 @@ Here’s a simplified view of what research suggests (while recognizing that eve
 5. Referrals & tie-ups when needed`,
     },
     {
-      question: 'What is Integrative Psychiatry? What does an Integrative Psychiatrist do?',
-      answer: `Integrative Psychiatry looks at the whole person — mind, body, and lifestyle — instead of focusing only on symptoms.
-An Integrative Psychiatrist considers not just mental health concerns, but also physical factors like nutrition, hormones, sleep, and stress patterns.
-
-This approach follows a biopsychosocial model, meaning it takes into account:
-
-- Biological aspects (like genetics, brain chemistry, nutrition, and physical health)
-- Psychological aspects (like emotions, coping patterns, and thought processes)
-- Social and cultural aspects (like relationships, environment, and community)
-
-It’s a 360-degree model — blending medical expertise with lifestyle, therapy, and self-awareness.
-The goal is not just to treat symptoms, but to support long-term, balanced well-being.`,
+      question: 'What is Funtional Psychiatry? What does an Functional Psychiatrist do?',
+      answer: `Functional psychiatry is a root-cause approach to mental health that merges traditional psychiatry with functional medicine. Rather than just managing symptoms, it investigates underlying biological, nutritional, and lifestyle imbalances such as gut health, inflammation, or nutrient deficiencies to heal the whole person, take your first lab test test now.`,
     },
     {
       question: 'What is anxiety and depression?',

@@ -55,7 +55,7 @@ export function PersonalisedTreatment() {
           <div>
             <span className="text-primary font-semibold">Our Unique Method</span>
             <h2 className="mt-2 font-headline text-3xl md:text-4xl font-semibold text-foreground">
-Personalised Treatment with the Lab to Life Healing Approach.            </h2>
+Personalised Treatment with the Lab to L.I.F.E. Healing Approach.            </h2>
             <p className="mt-4 text-lg text-muted-foreground">
 Beyond consultations and therapy, our Lab to Life Healing Approach supports your mental health and transforms you at 3B Levels— Biology, Beliefs and Behaviour.            </p>
             <ul className="mt-8 space-y-6">

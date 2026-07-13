@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, PhoneCall } from 'lucide-react';
 
 export function Hero() {
   const heroImage = PlaceHolderImages.find((img) => img.id === 'hero');
@@ -26,21 +26,31 @@ export function Hero() {
         <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
           {/* Text Content */}
           <div className="flex-1 text-center md:text-left">
-            <p className='text-2xl'>
-              Healing you inside out with-
-            </p>
-            <h1 className="font-headline text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight">
-              Dr. Meghna<br />
+            <h1 className='font-headline text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold tracking-tight'>
+              Healing you inside out
             </h1>
+
+            <p className="text-2xl">
+              <i className="">with</i> <br />
+            </p>
+            <h2 className='font-headline text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold tracking-tight'>
+              Lab to L.I.F.E. by Dr. Meghna
+            </h2>
+
             <p className="mt-6 max-w-2xl mx-auto md:mx-0 text-lg md:text-xl text-primary-foreground/80">
-            Ready to reclaim your energy and reset your life? <br />
-            Take your first step towards calm, clarity and confidence with our Lab to Life program.
+           Take your first step to healing with Mindsutra 
  </p>
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
               <Button size="lg" asChild>
-                <a href="#appointment">
-                  Book a Consultation
+                <a href="https://secure.therasoft.in/TSI/Bookyoursession.aspx?CC=nljrSrIO+Kg=&CON=qmz8KLmlxxg=" target="_blank" rel="noopener noreferrer">
+                  Book Your Lab Test
                   <ArrowRight className="ml-2" />
+                </a>
+              </Button>
+              <Button size="lg" asChild>
+                <a href="tel:9392449896">
+                  Call Now
+                  <PhoneCall className="ml-2" />
                 </a>
               </Button>
               {/* <Button size="lg" variant="secondary" asChild>
@@ -54,7 +64,7 @@ export function Hero() {
               <div className="aspect-video w-full bg-gray-300 rounded-lg flex items-center justify-center text-gray-600 text-xl font-semibold shadow-lg">
 <iframe
   className="rounded-lg h-sm-100 w-sm-100 hero-video w-full h-full"
-  src="https://www.youtube.com/embed/_u0fgtUr678?si=MpM2VAnw-fZdFe1T"
+  src="https://www.youtube.com/embed/_u0fgtUr678?si=0tzFFQ2hGYbVujmx"
   title="YouTube video player"
   frameBorder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -64,7 +74,7 @@ export function Hero() {
               
             </div>
             <p className='text-2xl text-center'>
-               Integrative Psychiatrist and Therapist
+               Functional Psychiatrist and Psychotherapist
             </p>
             </div>
               

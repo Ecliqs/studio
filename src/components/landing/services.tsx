@@ -16,22 +16,16 @@ import {
 export function Services() {
   const services = [
     {
+      icon: Users,
+      title: 'Lab to Life Consultation',
+      description:
+        'A personalised treatment plan based on your lab reports and functional medicine approach.',
+    },
+    {
       icon: Leaf,
       title: 'Inner Child Therapy',
       description:
       'Regression therapy that helps you to deal with difficult emotions like guilt, shame, anxiety and anger to bring calm, clarity and confidence.',   
- },
-    {
-      icon: BetweenHorizonalEnd,
-      title: 'Life Transition Coaching',
-      description:
-        'Navigate significant life changes with confidence. We provide strategies for managing career shifts, relocation, and other major adjustments.',
-    },
-    {
-      icon: HeartHandshake,
-      title: 'Relational Trauma',
-      description:
-        'Heal from the wounds of difficult relationships. Our approach helps you understand patterns, build resilience, and foster healthier connections.',
     },
     {
       icon: Venus,
@@ -40,16 +34,22 @@ export function Services() {
         'Specialized support for the unique mental health challenges women face, from postpartum issues to hormonal changes and societal pressures.',
     },
     {
-      icon: Users,
-      title: 'Lab to Life Consultation',
+      icon: BetweenHorizonalEnd,
+      title: 'Relationship counseling ',
       description:
-        'A personalised treatment plan based on your lab reports and functional medicine approach.',
+        'Relationship counselling, or couples therapy, is a form of psychotherapy that helps partners resolve conflicts, improve communication, and rebuild trust.',
+    },
+    {
+      icon: HeartHandshake,
+      title: 'Relational Trauma',
+      description:
+        'Heal from the wounds of difficult relationships. Our approach helps you understand patterns, build resilience, and foster healthier connections.',
     },
     {
       icon: Stethoscope,
-      title: 'Health & Wellness',
+      title: 'Natural Supplements',
       description:
-        'An integrative approach to mental well-being that considers the interplay of physical health, lifestyle, and psychological factors.',
+        'Natural supplements bridge the gap between your daily food intake and the essential vitamins or minerals your body requires.',
     },
   ];
 
