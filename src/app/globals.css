@@ -98,4 +98,19 @@ body {
   border-radius: 12px;
 }
 
+.Embed .Header{
+  display: none !important;
+}
+.Embed .HoverCard{
+  display: none !important;
+}
+.Embed .Feedback{
+  display: none !important;
+}
+.Embed .SocialProof{
+  display: none !important;
+}
+.Embed .Footer{
+  display: none !important;
+}
 

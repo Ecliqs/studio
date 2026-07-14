@@ -57,7 +57,9 @@ export function Header() {
           <nav className="hidden md:flex items-center space-x-6 ml-auto">
             <NavItems />
             <Button asChild>
-              <a href="#appointment">Book Now</a>
+              <a href="https://secure.therasoft.in/TSI/Bookyoursession.aspx?CC=nljrSrIO+Kg=&CON=qmz8KLmlxxg=" target="_blank" rel="noopener noreferrer">
+                Book Now
+              </a>
             </Button>
           </nav>
           <div className="ml-auto md:hidden">
@@ -77,7 +79,9 @@ export function Header() {
                     <NavItems />
                   </nav>
                   <Button asChild className="mt-auto">
-                    <a href="#appointment">Book Now</a>
+                    <a href="https://secure.therasoft.in/TSI/Bookyoursession.aspx?CC=nljrSrIO+Kg=&CON=qmz8KLmlxxg=" target="_blank" rel="noopener noreferrer">
+                      Book Now
+                    </a>
                   </Button>
                 </div>
               </SheetContent>

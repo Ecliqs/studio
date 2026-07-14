@@ -33,7 +33,7 @@ export function AboutDoctor() {
               Meet Dr. Meghna
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              As a metabolic psychiatrist, I believe in a Lab to Life approach to mental health. I specialise in management of Anxiety, Depression, OCD, Trauma, PTSD, etc.
+              As a functional psychiatrist, I believe in a Lab to Life approach to mental health. I specialise in management of Anxiety, Depression, OCD, Trauma, PTSD, etc.
             </p>
             <p className="mt-4 text-muted-foreground">
               My prescription includes-
@@ -44,7 +44,9 @@ export function AboutDoctor() {
               <li>Personalised care plan.</li>
             </ul>
             <Button size="lg" className="mt-8">
-              <a href="#appointment">Book an Appointment</a>
+              <a href="https://secure.therasoft.in/TSI/Bookyoursession.aspx?CC=nljrSrIO+Kg=&CON=qmz8KLmlxxg=" target="_blank" rel="noopener noreferrer">
+                Book an Appointment
+              </a>
             </Button>
           </div>
         </div>

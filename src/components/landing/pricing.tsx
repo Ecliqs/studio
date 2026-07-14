@@ -160,7 +160,7 @@ export function Pricing() {
                 </CardContent>
 
                 <CardFooter>
-                  <a href="#appointment" className="w-full">
+                  <a href="https://secure.therasoft.in/TSI/Bookyoursession.aspx?CC=nljrSrIO+Kg=&CON=qmz8KLmlxxg=" target="_blank" rel="noopener noreferrer" className="w-full">
                     <Button size="lg" className="w-full">
                       {plan.cta}
                     </Button>

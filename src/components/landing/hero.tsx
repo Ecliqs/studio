@@ -27,7 +27,7 @@ export function Hero() {
           {/* Text Content */}
           <div className="flex-1 text-center md:text-left">
             <h1 className='font-headline text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold tracking-tight'>
-              Healing you inside out
+              Heal from inside out!
             </h1>
 
             <p className="text-2xl">
@@ -38,18 +38,18 @@ export function Hero() {
             </h2>
 
             <p className="mt-6 max-w-2xl mx-auto md:mx-0 text-lg md:text-xl text-primary-foreground/80">
-           Take your first step to healing with Mindsutra 
+           Take your first step to healing with Mindsutra and book 10 minutes free exploratory call-
  </p>
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
               <Button size="lg" asChild>
                 <a href="https://secure.therasoft.in/TSI/Bookyoursession.aspx?CC=nljrSrIO+Kg=&CON=qmz8KLmlxxg=" target="_blank" rel="noopener noreferrer">
-                  Book Your Lab Test
+                  Book A Consultation
                   <ArrowRight className="ml-2" />
                 </a>
               </Button>
               <Button size="lg" asChild>
                 <a href="tel:9392449896">
-                  Call Now
+                  Exploratory Call
                   <PhoneCall className="ml-2" />
                 </a>
               </Button>
