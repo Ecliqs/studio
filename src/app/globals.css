@@ -113,4 +113,7 @@ body {
 .Embed .Footer{
   display: none !important;
 }
+#services{
+  border-top: 1px solid var(--sidebar-border) !important;
+}
 

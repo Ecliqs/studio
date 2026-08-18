@@ -42,15 +42,15 @@ export default function Home() {
         <ScrollAnimation>
           <AboutDoctor />
         </ScrollAnimation>
-        <ScrollAnimation>
+        {/* <ScrollAnimation>
           <SocialFeed />
-        </ScrollAnimation>
+        </ScrollAnimation> */}
         <ScrollAnimation>
           <Testimonials />
         </ScrollAnimation>
-        <ScrollAnimation>
+        {/* <ScrollAnimation>
           <CaseStudies />
-        </ScrollAnimation>
+        </ScrollAnimation> */}
         <ScrollAnimation>
           <Pricing />
         </ScrollAnimation>
