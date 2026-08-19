@@ -41,13 +41,38 @@ export function Symptoms() {
             </Badge>
           ))}
         </div>
-        <div className="mt-12 text-center">
+        {/* <div className="mt-12 text-center">
           <p className="text-muted-foreground">
             If you identify with any of these, you are not alone.
           </p>
           <Button size="lg" className="mt-4" asChild>
             <a href="#appointment">Let&apos;s Talk About It</a>
           </Button>
+        </div> */}
+      </div>
+      <div className="mx-auto mt-12 max-w-3xl px-4 sm:mt-16">
+        <div className="flex flex-col items-center gap-6 rounded-xl border border-primary bg-muted/30 p-6 text-center sm:flex-row sm:text-left">
+          <img
+            src="https://www.svgrepo.com/show/505175/annual-assessment.svg"
+            alt="Assessment"
+            width={100}
+            height={100}
+            className="shrink-0 rounded-full bg-background p-2"
+          />
+          <div className="flex-1">
+            <h2 className="text-xl font-semibold text-foreground">
+              Confused About Your Symptoms?
+            </h2>
+            <p className="mt-1 text-muted-foreground">
+              Take an assessment to better understand your situation.
+            </p>
+          </div>
+          <a
+            href="https://staging.holisticmindclinic.com/symptom-checker.php"
+            className="inline-flex shrink-0 items-center justify-center rounded-md bg-primary px-5 py-3 font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+          >
+            Take Assessment
+          </a>
         </div>
       </div>
     </section>
